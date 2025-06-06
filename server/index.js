@@ -1,7 +1,8 @@
 const express = require("express")
 const app = express()
 const mysql = require('mysql2');
-const cors = require("cors")
+const cors = require("cors");
+const PORT = process.env.PORT || 8000;
 
 
 app.use(cors());
@@ -92,8 +93,8 @@ app.delete('/delete/:id',(req, res)=>{
 })
 
 
-app.listen(8000, ()=>{
-    console.log("estoy corriendo en el puerto 8000")
+app.listen(PORT, ()=>{
+    console.log(`Servidor escuchando en puerto ${PORT}`)
 })
 
 module.exports = db;
