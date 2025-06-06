@@ -1,0 +1,6 @@
+# Ignorar node_modules en backend y frontend
+client/node_modules/
+server/node_modules/
+
+# Ignorar archivos de entorno
+*.env
